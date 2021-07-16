@@ -45,7 +45,7 @@ def dynamic_saliency_map(model, points, labels, device, n=100, T=20, alpha=1):
 
         points = tmp.detach().clone()
 
-    # returns the points after dropping the most importan ones and the moset important points
+    # returns the points after dropping the most important ones and the most important points
     return points, saliency_points
 
 
