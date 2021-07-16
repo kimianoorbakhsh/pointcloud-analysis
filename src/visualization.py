@@ -45,8 +45,8 @@ def visualize_rotate(data):
 
 def pcshow(xs, ys, zs, xss, yss, zss):
     data = [go.Scatter3d(x=xs, y=ys, z=zs,
-                         mode='markers', marker = dict(color = 'red')), go.Scatter3d(x=xss, y=yss, z=zss,
-                         mode='markers', marker = dict(color = 'blue'))]
+                         mode='markers', marker = dict(color = 'blue')), go.Scatter3d(x=xss, y=yss, z=zss,
+                         mode='markers', marker = dict(color = 'red'))]
     fig = visualize_rotate(data)
     fig.update_traces(marker=dict(size=2,
                       line=dict(width=2,
