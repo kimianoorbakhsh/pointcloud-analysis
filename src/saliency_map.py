@@ -55,3 +55,14 @@ def correct_reshape(point):
         p[i] = torch.from_numpy(
             np.array([point[0][i], point[1][i], point[2][i]]))
     return p
+
+def setdiff2(p1, p2):
+  new_len = len(p1) - len(p2)
+  diff_arr = []
+  diff = np.zeros((new_len, 3))
+  for i in range(len(p1)):
+    if p1[i] not in p2:
+      diff_arr.append(p1[i])
+  for i in range(len(diff_arr)):
+    diff[i] = diff_arr[i]
+  return diff
