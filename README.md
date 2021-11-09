@@ -13,7 +13,7 @@ Note: In progress, new implementations regarding to this project will be added s
 
 Model checkpoints are available [here](https://github.com/kimianoorbakhsh/pointcloud-analysis/tree/main/models). 
 
-## Datacets
+## Datasets
 
 ModelNet Dataset from [Priceton ModelNet](https://modelnet.cs.princeton.edu/).
 
