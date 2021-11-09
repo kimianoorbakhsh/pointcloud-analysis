@@ -19,3 +19,7 @@ ModelNet Dataset from [Priceton ModelNet](https://modelnet.cs.princeton.edu/).
 
 ## Citation
 Please cite us if you use our work in your research.
+
+## References:
+- https://github.com/aryanmikaeili/Pointnet-CW-attack
+- https://github.com/tianzheng4/PointCloud-Saliency-Maps
