@@ -15,7 +15,7 @@ Model checkpoints are available [here](https://github.com/kimianoorbakhsh/pointc
 
 ## Datacets
 
-ModelNet Dataset from [Proceton ModelNet](https://modelnet.cs.princeton.edu/).
+ModelNet Dataset from [Priceton ModelNet](https://modelnet.cs.princeton.edu/).
 
 ## Citation
 Please cite us if you use our work in your research.
