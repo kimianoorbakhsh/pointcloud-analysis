@@ -13,16 +13,16 @@ classes = {'airplane' : 0, 'bathtub' : 1, 'bed': 2, 'bench': 3, 'bookshelf':4, '
 ####load data
 
 ###to correctly run the code please pay attention to the folder structure and file names. you must first have the Modelnet40 train and test data.
-def load_data(mode = 'train'):
+def load_data(data_path, label_path, mode = 'train'):
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    DATA_dir = os.path.join(BASE_DIR, 'Modelnet40_data')
+    DATA_dir = os.path.join(BASE_DIR, 'Data')
 
     if mode == 'train':
-        X_file = os.path.join(DATA_dir, 'modelnet40_train_data.npy')
-        y_file = os.path.join(DATA_dir, 'modelnet40_train_labels.npy')
+        X_file = os.path.join(DATA_dir, data_path)
+        y_file = os.path.join(DATA_dir, label_path)
     elif mode == 'test':
-        X_file = os.path.join(DATA_dir, 'modelnet40_test_data.npy')
-        y_file = os.path.join(DATA_dir, 'modelnet40_test_labels.npy')
+        X_file = os.path.join(DATA_dir, data_path)
+        y_file = os.path.join(DATA_dir, label_path)
 
     return np.load(X_file), np.load(y_file).astype('int')
 
